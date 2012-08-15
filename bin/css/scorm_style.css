@@ -1,0 +1,168 @@
+@CHARSET "ISO-8859-1";
+
+#circle_gui_modal{
+  	border: 1px solid #000;
+ 	background-color: #FFFFFF;
+	}
+
+#circle_load_gfx{
+ 	background: url('gfx/loadanim.gif') no-repeat center;
+}
+
+#circle_load_message{
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+#btn_transcript {
+	background: url('gfx/transcript.png') no-repeat 0 0;
+}
+#btn_notepad {
+	background: url('gfx/notepad.png') no-repeat 0 0;
+}
+#btn_print_friendly {
+	background: url('gfx/print_friendly.png') no-repeat 0 0;
+}
+
+#btn_print_frame{
+	background: url('gfx/print_frame.png') no-repeat 0 0;
+	cursor:pointer;
+}
+
+#btn_resources{
+	background: url('gfx/resources.png') no-repeat 0 0;
+}
+
+
+#circle_navigation > #previous_link{
+	background: url('gfx/btn_previous.png') no-repeat 0 0;
+}
+#circle_navigation > #next_link{
+	background: url('gfx/btn_next.png') no-repeat 0 0;
+}
+
+#circle_navigation > #previous_link:hover {
+    background-position: 0px -33px;
+}
+#circle_navigation > #next_link:hover {
+    background-position: 0px -33px;
+}
+#circle_swf_container{
+	text-align:center;
+  	border: 1px 1px 0px 1px solid #000;
+}
+
+#notepad_container{
+	background-color:#648E5C;
+  	border-bottom: 1px solid #000;
+}
+
+#resources_container{
+	background-color:#648E5C;
+  	border-bottom: 1px solid #000;
+  	border-left: 1px solid #000;
+  	border-right: 1px solid #000;
+}
+
+
+
+#transcript_container{
+	background-color:#648E5C;
+  	border-bottom: 1px solid #000;
+  	border-left: 1px solid #000;
+  	border-right: 1px solid #000;
+}
+#transcript_contents{
+	background-color:#ffffff;
+}
+
+
+#tools_label{
+	border-top:1px solid #fff;
+	text-align:left;
+}
+
+.tools_label{
+	font-size:14px;
+	font-weight:bold;
+	color:#ffffff;
+	text-align:left;
+}
+
+
+
+#activity_title{
+	font-size:20px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+
+
+#circle_navigation_container{
+	text-align:right;
+}
+
+
+#circle_gui_background{
+  	border: 1px solid #000;
+ 	color: #000;
+ 	background-color: #FFFFFF;
+}
+
+#circle_navigation_text{
+text-align:right;
+font-size:14px;
+font-weight:bold;
+color:#025C01;
+}
+
+
+#circle_learn_lite_tabs_container{
+	/*padding-left:20px;*/
+	/*text-align:center;*/
+  	border: 1px solid #000;
+ 	background-color: #DFEAF7;
+}
+
+
+.circle_learn_lite_tab{
+	text-align:center;
+  	border-left: 1px solid #000;
+  	border-right: 1px solid #000;
+  	background-color:#EFF1FA !important;
+}
+#circle_learn_lite_tab_current{
+ 	background-color: #B0CCEC !important;
+	color:#FFFFFF !important;
+	font-weight:bold !important;
+}
+.circle_learn_lite_tab_title{
+	font-size:10px;
+}
+.circle_learn_lite_tab:hover {
+    /*background-position: 0px -33px !important;*/
+ 	background-color: #B0CCEC !important;
+}
+
+#scorm_view_learn_lite_tab_header{
+	background: url('gfx/sections.png') no-repeat center;
+}
+
+.circle_resource_description{
+	font-size:9px;
+	color:#363636;
+	}
+	
+	
+#activity_title{
+
+	}
+	
+.circle_container > .circle_label{
+color:#ffffff;
+}
+.circle_button{font-size:14px;font-weight:bold;color:#ffcc66;cursor:pointer;}

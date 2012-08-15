@@ -1,0 +1,283 @@
+@CHARSET "ISO-8859-1";
+
+#circle_columns{
+	display:block;
+	position:relative;
+	margin-top:20px;
+	}
+	
+#circle_menu_column{
+	left:0px;
+	top:0px;
+	width:250px;
+	position:relative;
+	padding:0px 10px 0px 10px;
+}
+
+
+#circle_main_column{
+	position:absolute;
+	left:250px;
+	top:0px;
+	margin:0px auto auto 0px;
+}
+
+
+#circle_gui_container{
+	z-index:9;
+	width:760px;
+	height:440px;
+	position:relative;
+}
+#circle_gui_modal{
+	padding-top:50px;
+	z-index:10;
+	width:100%;
+ 	display:block;
+ 	margin:auto;
+ 	position:relative;
+	}
+.circle_gui_modal_learn{
+	height:440px;
+}
+.circle_gui_modal_learnlite{
+	height:707px;
+}
+
+#circle_load_gfx{
+	width:40px;
+	height:40px;
+ 	margin:100px auto 20px auto;
+ 	position:relative;
+}
+
+#circle_load_message{
+  	margin:20px auto 0px auto;
+}
+
+
+#circle_btn_toggle_transcript {
+	display:block;
+}
+#circle_btn_toggle_notepad {
+	display:block;
+}
+#circle_btn_pf {
+	display:block;
+}
+
+#circle_btn_pfr{
+	display:block;
+}
+
+#circle_btn_toggle_resources{
+	display:block;
+}
+
+#circle_swf_container{
+	z-index:2;
+	position:absolute;
+	top:0px;
+	left:1px;
+	width:760px;
+	height:440px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.circle_container{
+	position:absolute;
+	max-height:455px;
+	padding:20px 10px 10px 10px;
+  	display:none;
+	top:0px;
+	width:290px;
+	right:-2px;
+}
+
+
+#circle_transcript_container{
+	z-index:4;
+}
+#circle_notepad_container{
+	z-index:3;
+	width:760px !important;
+	height:440px !important;
+	left:0px;
+}
+
+#circle_resources_container{
+	z-index:7;
+}
+
+#circle_resources_contents{
+	max-height:375px;
+	overflow:auto;
+	margin:20px 0px 10px 0px;
+	padding:0px 5px 0px 5px;
+}
+
+
+
+
+
+
+
+.circle_navigation_button{
+	display:inline;
+	cursor:pointer;
+    width: 60px;
+    height: 25px;
+    position: relative;
+    float:right;
+}
+
+
+#circle_transcript_contents{
+	max-height:375px;
+	overflow:auto;
+	margin:20px 0px 10px 0px;
+	padding:0px 5px 0px 5px;
+}
+
+#circle_error_from_as_container{
+	z-index:9;
+	display: none;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:150px;
+	width:500px;
+	top:51px;
+	padding:20px 10px 10px 10px;
+}
+
+
+#circle_error_from_as_contents{
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+#muzak{
+	width:80%;
+  	margin:20px auto 20px auto;
+  	padding-bottom:20px;
+	}
+#circle_tools_container{
+	z-index:9;
+	position:absolute;
+	right:10px;
+	top:-55px;
+}
+
+.circle_tool > #label{
+	height:22px;
+}
+
+
+#circle_resources_label {
+	margin-top:15px;
+}
+#circle_transcript_label {
+	margin-top:15px;
+}
+
+
+
+#circle_tools_button_container{
+	float:none;
+	position:relative;
+	right:10px;
+	top:0px;
+}
+
+.circle_tools_button{
+	display:inline;
+	margin-right:5px;
+	cursor:pointer;
+    width: 40px;
+    height: 50px;
+    position: relative;
+    float:right;
+	background-color:#ffcc66;
+}
+
+
+
+#circle_activity_title{
+	z-index:6;
+	position:absolute;
+	margin-top:10px;
+	margin-left:10px;
+	padding:5px;
+	top:0px;
+}
+
+
+
+#circle_navigation_container{
+	z-index:8;
+	position:absolute;
+	right:15px;
+	top:550px;
+}
+
+
+#circle_gui_background{
+	z-index:1;
+	position:relative;
+	left:0;
+ 	width: 760px;
+ 	height: 440px;
+}
+
+#circle_navigation_button_container{
+float:none;
+}
+#circle_navigation_text{
+float:none;
+clear:both;
+top:10px;
+position:relative;
+height:50px;
+}
+
+
+#circle_learn_lite_tabs_container{
+	width:100%;
+	margin:5px 0px 5px 0px;
+	/*padding-left:20px;*/
+	/*text-align:center;*/
+}
+
+
+.circle_learn_lite_tab{
+	width:100px;
+	padding:5px;
+	margin-left:-1px;
+	display:inline-block;
+	cursor:pointer;
+}
+#circle_learn_lite_tab_current{
+	cursor:default !important;
+}
+.circle_learn_lite_tab_title{
+	margin-top:80px;
+	font-size:10px;
+}
+
+#scorm_view_learn_lite_tab_header{
+	width:20px;
+	height:110px;
+	display:inline-block;
+	left:0px;
+}
+
+.circle_resource_description{
+	margin-left:15px;
+	margin-top:-10px;
+	}
+	
+#activity_title{
+	height:50px;
+	}

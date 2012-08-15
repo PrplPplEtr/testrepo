@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>LEARNTest</title>
+	<meta name="description" content="" />
+	
+	<script src="js/swfobject.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/LEARN_API.js"></script>
+	<script src="js/DOM_UTIL.js"></script>
+	<script src="js/AS_TO_JS_API.js"></script>
+	<script src="js/JS_TO_AS_API.js"></script>
+	<script src="js/LEARNURLParser.js"></script>
+	<script src="js/LEARNControlMapping.js"></script>
+	<script>
+		var flashvars = {
+			package_location:LEARNURLParser.ASSET_DIRECTORY,
+			shared_directory:LEARNURLParser.SHARED_DIRECTORY,
+			ASSET_DIRECTORY:LEARNURLParser.ASSET_DIRECTORY,
+			source_domain:""
+		};// TODO: get flashvars from page
+		var params = {
+			menu: "false",
+			scale: "noScale",
+			allowFullscreen: "true",
+			allowScriptAccess: "always",
+			bgcolor: "#c3c3b2",
+			wmode: "direct" // can cause issues with FP settings & webcam
+		};
+		var attributes = {
+			id:"LEARNSWF"
+		};
+		swfobject.embedSWF(
+			"LEARNTest.swf",//LEARNURLParser.PATH_TO_SWF 
+			"altContent", "520", "650", "10.0.0", 
+			"expressInstall.swf", 
+			flashvars, params, attributes);
+	</script>
+	<style>
+		html, body { height:100%; overflow:hidden; }
+		body { font-family:Arial;margin:0; }
+		.column_left{display:inline-block;position:absolute;top:25;}
+		.column_right{display:inline-block;position:absolute;top:0;left:530px;}
+		#topBar{height:25px;}
+		.circle_label{font-size:14px;font-weight:bold;}
+		.debug{font-size:10px;margin-left:10px;}
+		#link_title{height:22px;}
+		.nav_link{display:inline-block;}
+		#circle_transcript_contents{font-size:10px;margin-left:10px;}
+		#circle_resources_contents{font-size:10px;margin-left:10px;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/scorm_style.css" />
+	<link rel="stylesheet" type="text/css" href="css/scorm_layout.css" />
+</head>
+<body>
+	<div><span class="circle_label">Title: </span><span id="activity_title"></span></div>
+	
+	<div class="column_left">
+		<!-- this content gets replaced with the swf -->
+		<div id="altContent">
+			<h1>LEARNTest</h1>
+			<p><a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash player</a></p>
+		</div>
+		<!-- end content that gets replaced -->
+	</div>
+	
+	<div class="column_right">
+		<div id="circle_navigation">
+		
+			<!-- map to click:LEARN.goURLHandler() & rollover/out:LEARN.setNavTitleHandler()-->
+			<div class="nav_link" id="next_link">Next</div>
+			
+			<!-- map to click:LEARN.goURLHandler() & rollover/out:LEARN.setNavTitleHandler()-->
+			<div  class="nav_link" id="previous_link">Previous</div>
+			
+			<div id="link_title">&nbsp;</div>
+			
+		</div>
+		
+		<!-- map to JS_TO_AS_API.printFrame() -->
+		<div class="circle_button" id="btn_print_frame" >Print Frame</div>
+		<div class="circle_button" id="btn_print_friendly" >Print Friendly</div>
+		<div class="circle_button" id="btn_transcript" >T</div>
+		<div class="circle_button" id="btn_notepad" >Notepad</div>
+		<div class="circle_button" id="btn_resources" >Resources</div>
+		
+		<!-- map to JS_TO_AS_API.startClip() -->
+		<div class="circle_button" id="btn_start_clip" >Start Clip</div>
+		
+		<div class="circle_tool" id="label">&nbsp;</div>
+		
+		<div class="circle_label" id="transcript_label" >Transcript Contents:</div>
+		<div class="circle_container" id="transcript_container">
+			<div class="circle_label" id="transcript_label"></div>
+			<div id="transcript_contents"></div>
+			<input type="submit" value="Close" />
+		</div>
+		
+		<div class="circle_label" id="resources_label" >Resources Contents:</div>
+		<div class="circle_container" id="resources_container">
+			<div class="circle_label" id="resources_label"></div>
+			<div id="resources_contents"></div>
+			<input type="submit" value="Close" />
+		</div>
+		
+		<div class="circle_label" id="notepad_label" >Notepad Contents:</div>
+		<div class="circle_container" id="notepad_container">
+			<div class="circle_label" id="notepad_label"></div>
+			<div id="notepad_contents"></div>
+			<input type="submit" value="Close" />
+		</div>
+		
+		
+		
+		<div class="circle_label" id="debug_label" >Debug:</div>
+		<div class="debug" id="debug" ></div>
+	</div>
+	
+	
+</body>
+</html>
