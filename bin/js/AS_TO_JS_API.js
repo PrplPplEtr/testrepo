@@ -39,20 +39,23 @@ var AS_TO_JS_API={
 		switch(target){
 			case AS_TO_JS_API.CONSTANTS.TRANSCRIPT:
 				LEARN_API.CONSTANTS.LBL_TRANSCRIPT=label;
-				$(".circle_container > #transcript_label").html(label);
-				$("#btn_transcript").html(label);
+				DOM_UTIL.setToolLabels("transcript",label);
 				break;
 			case AS_TO_JS_API.CONSTANTS.NOTEPAD:
 				LEARN_API.CONSTANTS.LBL_NOTEPAD=label;
+				DOM_UTIL.setToolLabels("notepad",label);
 				break;
 			case AS_TO_JS_API.CONSTANTS.PRINT_FRIENDLY:
 				LEARN_API.CONSTANTS.LBL_PRINT_FRIENDLY=label;
+				DOM_UTIL.setToolLabels("print_friendly",label);
 				break;
 			case AS_TO_JS_API.CONSTANTS.PRINT_FRAME:
 				LEARN_API.CONSTANTS.LBL_PRINT_FRAME=label;
+				DOM_UTIL.setToolLabels("print_frame",label);
 				break;
 			case AS_TO_JS_API.CONSTANTS.RESOURCES:
 				LEARN_API.CONSTANTS.LBL_RESOURCES=label;
+				DOM_UTIL.setToolLabels("resources",label);
 				break;
 			default:
 				alert("Target ("+target+") not found");

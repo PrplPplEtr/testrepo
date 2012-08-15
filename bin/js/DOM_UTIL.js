@@ -39,6 +39,13 @@ var DOM_UTIL={
 		$(".circle_tool#label").html("&nbsp;");
 	},
 	
+	setToolLabels:function(type,label){
+		var selOne=".circle_container > #"+type+"_label";
+		var selTwo="#btn_"+type;
+		$(selOne).html(label);
+		$(selTwo).html(label);
+	}
+	
 	printFriendly:function(){
 		var pfLink=LEARNURLParser.getPathToPrintFriendly();
 		window.open(pfLink,'_blank');
