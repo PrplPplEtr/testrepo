@@ -44,7 +44,7 @@ var DOM_UTIL={
 		var selTwo="#btn_"+type;
 		$(selOne).html(label);
 		$(selTwo).html(label);
-	}
+	},
 	
 	printFriendly:function(){
 		var pfLink=LEARNURLParser.getPathToPrintFriendly();
